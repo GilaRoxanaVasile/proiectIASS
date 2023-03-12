@@ -1,0 +1,139 @@
+﻿
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ProjectIASS.Site1" %>
+
+<!DOCTYPE html>
+<html>
+	<div style="background-color: #ffffff; border-radius: 10px 10px 10px 10px;">
+<head runat="server">
+	<title>Acasa</title>
+	<link href="css/my.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="my.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/my.css" />
+	<meta charset="utf-8">
+	<table>
+		<tr>
+			<td><img src="Imagini/logo.png" width="300" height="150"></td>
+			<td> </td>
+		
+			<td> 
+				<div style="right: 25px; top: 60px; position: absolute;">
+				<style>
+					nav {
+							margin: 0px auto 0;
+							position: relative;
+							width: 590px;
+							height: 50px;
+							background-color: #34495e;
+							border-radius: 8px;
+							font-size: 0;
+						}
+					nav a {
+							line-height: 50px;
+							height: 100%;
+							font-size: 15px;
+							position: relative;
+							display:inline-block;
+							z-index: 1;
+							text-decoration: none;
+							text-transform: uppercase;
+							text-align: center;
+							color: white;
+							cursor: pointer;
+						}
+
+                    nav .animation {
+										position: absolute;
+										height: 100%;
+										top: 0;
+										z-index: 0;
+										transition: all .15s ease 0s;
+										border-radius: 8px;
+									}
+					a:nth-child(1) {
+										width: 100px;
+						           }						
+					a:nth-child(2) {
+										width: 170px;
+									}
+					a:nth-child(3) {
+										width: 170px;
+									}
+								
+					nav .start-home, a:nth-child(1):hover~.animation {
+																		width: 200px;
+																		left: 0;
+																		background-color: #1abc9c;
+																	}
+                    nav .start-about, a:nth-child(2):hover~.animation {
+																		width: 200px;
+																		left: 200px;
+																		background-color: #e74c3c;
+																	}
+					nav .start-blog, a:nth-child(3):hover ~ .animation {
+						width: 200px;
+						left: 400px;
+						background-color: #3498db;
+					}
+					
+					h1 {
+							text-align: center;
+							margin: 40px 0 40px;
+							text-align: center;
+							font-size: 30px;
+							color: #ecf0f1;
+							text-shadow: 2px 2px 4px #000000;
+							font-family: 'Cherry Swash', cursive;
+						}
+					span {
+							color: #16a085;
+							}
+				  div.container{
+				   
+				   position:relative;
+				   border-radius: 8px;
+				   align:center;
+				   top:30px;
+				   }
+				body{
+	background-image:url(Imagini/back1.jpg);
+	background-position: fixed;
+	background-size: cover;
+	}
+	.content{
+	background: white;
+	width:50%;
+	padding:40px;
+	margin: 100px auto;
+	}		
+					
+				</style>
+				<nav class="flex">
+					
+					<a href="WebForm2.aspx">Acasa</a>
+					<a href="WebForm5.aspx">Pacienti</a>
+					<a href="WebForm8.aspx">Medicamente</a>
+					
+				<div class="animation start-home"></div>
+				</nav>
+
+				</div>	
+			</td>
+		</tr>
+	</table>
+	<asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+</div>
+<body>
+
+	<br><br>
+	<div class="body-content">
+	
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+   </div>
+
+	
+</body>
+</html>

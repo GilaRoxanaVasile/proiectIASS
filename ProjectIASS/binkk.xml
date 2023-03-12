@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Farmacie>
+  <Pacienti>
+    <nume>1</nume>
+    <prenume>2</prenume>
+    <diagnostic>2</diagnostic>
+    <email>2</email>
+  </Pacienti>
+  <Reteta>
+    <medicament>3</medicament>
+    <indicatii>2</indicatii>
+  </Reteta>
+</Farmacie>
